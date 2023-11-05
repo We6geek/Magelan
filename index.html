@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Проект Magelan разработан студией Techsenger - комплексные web решения - сайт:  http://techsenger.com, тел.: (495) 766-75-60"
+    />
+    <link rel="stylesheet" href="/assets/styles/normalize.css" />
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>
+      Тендеры и коммерческие закупки (поставки) электронных торговых площадок
+      Москвы и России - MAGELAN.PRO
+    </title>
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <div class="container__logo">
+          <img src="/assets/images/logologo.svg" alt="logotype" />
+          <p>8 495 648 6228</p>
+        </div>
+        <div class="container__person">
+          <a href="#"><p>Создать аккаунт</p></a>
+          <button type="button">
+            <img src="/assets/images/Groupperson.svg" alt="" />
+            <p>Вход</p>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main__searching-container">
+        <h1>В тендерах главное не участие, а победа</h1>
+        <!-- Верстка 3-х табов -->
+        <div class="tab">
+          <input checked id="tab-btn-1" name="tab-btn" type="radio" value="" />
+          <label for="tab-btn-1">Текущие</label>
+          <input id="tab-btn-2" name="tab-btn" type="radio" value="" />
+          <label for="tab-btn-2">Архив</label>
+          <input id="tab-btn-3" name="tab-btn" type="radio" value="" />
+          <label for="tab-btn-3">Мои фильтры</label>
+          <!-- Контент для первого таба -->
+          <div class="tab-content" id="content-1">
+            <!-- Верстка сложной формы -->
+            <form action="">
+              <div class="tab__form">
+                <div class="top__div">
+                  <!-- Поисковая строка -->
+                  <input
+                    type="search"
+                    placeholder="поиск по тендерам и госзакупкам"
+                    name=""
+                    id=""
+                  />
+                  <!-- Категории поиска -->
+                  <label for="orders"></label>
+                  <select name="orders" id="">
+                    <option value="">Все заказы</option>
+                    <option value="">Государственные</option>
+                    <option value="">Коммерческие</option>
+                  </select>
+                  <!-- Кнопка поиск -->
+                  <input type="button" value="" id="" />
+                </div>
+              </div>
+              <!-- Верстка расширенной формы -->
+              <div class="tab__advanced-form" id="block_id">
+                <!-- Все расширенные формы -->
+                <div class="advanced__forms">
+                  <!-- Верхний ряд -->
+                  <div class="forms__top">
+                    <!-- Форма сумма в руб -->
+                    <div class="form-rubels">
+                      <p>Сумма в рублях</p>
+                      <div>
+                        <input
+                          type="number"
+                          name=""
+                          id=""
+                          placeholder="   от"
+                        />
+                        <input
+                          type="number"
+                          name=""
+                          id=""
+                          placeholder="   до"
+                        />
+                      </div>
+                    </div>
+                    <!-- Форма даты открытия-->
+                    <div class="form-open">
+                      <p>Дата открытия</p>
+                      <div>
+                        <input type="date" name="" id="" />
+                        <input type="date" name="" id="" />
+                      </div>
+                    </div>
+                    <!-- Форма даты закрытия -->
+                    <div class="form-close">
+                      <p>Дата закрытия</p>
+                      <div>
+                        <input type="date" name="" id="" />
+                        <input type="date" name="" id="" />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Нижний ряд -->
+                  <div class="forms__bottom">
+                    <div class="form-words">
+                      <p>Слова исключения</p>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="   через запятую"
+                      />
+                    </div>
+                    <div class="industry">
+                      <p>Отрасли</p>
+                      <label for="advanced" onclick="showHide('block_popup')"
+                        >Выбрать</label
+                      >
+                    </div>
+                    <div class="regions">
+                      <p>Регионы</p>
+                      <select name="orders" id="">
+                        <option value="">Все регионы</option>
+                        <option value="">Московская обл.</option>
+                        <option value="">Ленинградская обл.</option>
+                        <option value="">Мурманская обл.</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- Все расширенные чекбоксы -->
+                <div class="advanced__checkboxes">
+                  <div>
+                    <input type="checkbox" name="" id="check1" />
+                    <label for="check1">Открытый конкурс</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="" id="check2" />
+                    <label for="check2">Коректировка цен</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="" id="check3" />
+                    <label for="check3">Электронный аукцион</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="" id="check4" />
+                    <label for="check4">Предварительный отбор</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name="" id="check5" />
+                    <label for="check5">Простая закупка</label>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <!-- Второстепенные элементы -->
+            <div class="tab__sec-elements">
+              <!-- Блок с рассылкой и избранным -->
+              <div class="elements__fav">
+                <!-- Кнопка рассылки -->
+                <label for="newsletter" class="label">
+                  <!-- Текст -->
+                  <span class="text">Добавить рассылку</span>
+                  <!-- Кастомная иконка -->
+                  <span class="fake_one"></span>
+                  <!-- Скрытый чекбокс -->
+                  <input type="checkbox" class="checkbox" id="newsletter" />
+                </label>
+                <!-- Кнопка избранное -->
+                <label for="favorite" class="label">
+                  <!-- Текст -->
+                  <span class="text">Сохранить в поиск</span>
+                  <!-- Кастомная иконка -->
+                  <span class="fake_two"></span>
+                  <!-- Скрытый чекбокс -->
+                  <input type="checkbox" class="checkbox" id="favorite" />
+                </label>
+              </div>
+              <!-- Блок с расширенным поиском -->
+              <div class="elements__advanced-search">
+                <!-- Скрытый чекбокс -->
+                <input
+                  checked
+                  id="advanced"
+                  name="tab-btn"
+                  type="checkbox"
+                  value=""
+                />
+                <!-- Текст и функция -->
+                <label for="advanced" onclick="showHide('block_id')"
+                  >Расширенный поиск<img
+                    src="/assets/images/Vectoradvsearch.svg"
+                    alt=""
+                /></label>
+              </div>
+            </div>
+            <div class="popup-container">
+              <div class="popup-industry">
+                <div class="top-section"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Контент для второго таба -->
+          <div class="tab-content" id="content-2">
+            
+          </div>
+          <!-- Контент для третьего таба -->
+          <div class="tab-content" id="content-3">
+            
+          </div>
+        </div>
+      </div>
+      <div class="main__three-blocks">
+        <div class="blocks-inform">
+          <img src="/assets/images/block1.webp" alt="" />
+        </div>
+        <div class="blocks-inform">
+          <img src="/assets/images/block2.webp" alt="" />
+        </div>
+        <div class="blocks-inform">
+          <img src="/assets/images/block3.webp" alt="" />
+        </div>
+      </div>
+      <div class="main__marquee">
+        <p>Новое</p>
+        <marquee behavior="scroll" direction="left">
+          <p>
+            Поставка красного бронированного кирпича на Марс
+            <span>540 000 ₽</span>Разработка ПО по поиску, анализу и аннигуляции
+            дифракций <span>1 540 000 ₽</span>
+          </p>
+        </marquee>
+      </div>
+      <div class="main__three-blocks_sec">
+        <div class="blocks-dynamic">
+          <img src="/assets/images/dynamic1.webp" alt="" />
+        </div>
+        <div class="blocks-dynamic">
+          <img src="/assets/images/dynamic2.webp" alt="" />
+        </div>
+        <div class="blocks-dynamic">
+          <img src="/assets/images/dynamic3.webp" alt="" />
+        </div>
+      </div>
+      <div class="main__tarif">
+        <div class="tarif__left">
+          <h1>Тариф СТАРТ</h1>
+          <p>Получите промокод на первую рекламную кампанию в Magelan</p>
+        </div>
+        <div class="tarif__right">
+          <h1>3000 ₽</h1>
+          <a href=""><p>Получить</p></a>
+        </div>
+      </div>
+      <div class="main__inform-resourses">
+        <p>Все источники информации</p>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="/assets/images/slider1.svg" alt="">
+              <p>Электронная площадка России</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/slider2.svg" alt="">
+              <p>Электронная площадка Фабрикант</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/slider32.png" alt="">
+              <p>Всероссийская универсальная площадка</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/slider4.svg" alt="">
+              <p>Федеральная электронная площадка ТЭК-Торрг</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/slider5.svg" alt="">
+              <p>Электронная торговая площадка ГПБ</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/slider6.svg" alt="">
+              <p>Система торгов государственного оборонного заказа</p>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+        </div>
+      </div>
+      <div class="main__our-cases">
+        <div class="cases-block1">
+          <div class="cases-left">
+            <p>новых тендеров</p>
+            <h1>21 413<img src="/assets/images/arrowtender.svg" alt=""></h1>
+          </div>
+          <div class="cases-right">
+            <p>на сумму</p>
+            <h1>53 342 230 ₽</h1>
+          </div>
+        </div>
+        <div class="cases-block2">
+          <div class="cases-left">
+            <p>текущих</p>
+            <h1>2 213</h1>
+          </div>
+          <div class="cases-right">
+            <p>на сумму</p>
+            <h1>5 342 230 ₽</h1>
+          </div>
+        </div>
+        <div class="cases-block3">
+          <p>заказчиков</p>
+          <h1>132 312</h1>
+        </div>
+        <div class="cases-block4">
+          <p>пользователей</p>
+          <h1>121 413</h1>
+        </div>
+      </div>
+      <div class="main__orders-industries">
+        <p>Заказы по отраслям</p>
+          <div class="swiper2">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+              <div class="swiper-slide">
+                <div>
+                  <p>Безопасность / связь / коммуникации</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div>
+                  <p>Бизнес / финансы / страхование / маркетинг</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div onclick="showHide('orders_id')">
+                  <p>Бумага / тара / упаковка</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div class="child_orders" id="orders_id">
+                  <div class="child_orders-div">
+                    <p>Бумага, картон и различные изделия из них</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Европоддоны, поддоны, ящики</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Контейнеры, цистерны</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Мешки, пакеты</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Одноразовая посуда</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Тара металлическая, полимерная, стеклянная</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Упаковка - сырье, материалы, услуги</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p>Деревообработка / пиломатериалы</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div>
+                  <p>Компьютеры / мультимедийное оборудование / ИТ</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div>
+                  <p>Легкая промышленность / мебель / ТНП</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div>
+                  <p>Машиностроение / оборудование / приборы</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div>
+                  <p>Медицина / здравоохранение/ социальные услуги</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <p>Безопасность / связь / коммуникации</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div>
+                  <p>Бизнес / финансы / страхование / маркетинг</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div onclick="showHide('orders_id2')">
+                  <p>Бумага / тара / упаковка</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div class="child_orders" id="orders_id2">
+                  <div class="child_orders-div">
+                    <p>Бумага, картон и различные изделия из них</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Европоддоны, поддоны, ящики</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Контейнеры, цистерны</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Мешки, пакеты</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Одноразовая посуда</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Тара металлическая, полимерная, стеклянная</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Упаковка - сырье, материалы, услуги</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p>Деревообработка / пиломатериалы</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div>
+                  <p>Компьютеры / мультимедийное оборудование / ИТ</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div>
+                  <p>Легкая промышленность / мебель / ТНП</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div>
+                  <p>Машиностроение / оборудование / приборы</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div>
+                  <p>Медицина / здравоохранение/ социальные услуги</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <p>Безопасность / связь / коммуникации</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div>
+                  <p>Бизнес / финансы / страхование / маркетинг</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div onclick="showHide('orders_id3')">
+                  <p>Бумага / тара / упаковка</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div class="child_orders" id="orders_id3">
+                  <div class="child_orders-div">
+                    <p>Бумага, картон и различные изделия из них</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Европоддоны, поддоны, ящики</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Контейнеры, цистерны</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Мешки, пакеты</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Одноразовая посуда</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Тара металлическая, полимерная, стеклянная</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                  <div class="child_orders-div">
+                    <p>Упаковка - сырье, материалы, услуги</p>
+                    <div class="value">
+                      <p>+300 <span>3500</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p>Деревообработка / пиломатериалы</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div>
+                  <p>Компьютеры / мультимедийное оборудование / ИТ</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div>
+                  <p>Легкая промышленность / мебель / ТНП</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div>
+                  <p>Машиностроение / оборудование / приборы</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+                <div>
+                  <p>Медицина / здравоохранение/ социальные услуги</p>
+                  <div class="value">
+                    <p>+300 <span>3500</span></p>
+                  </div>
+                </div>
+              </div>           
+            </div>
+          </div>
+      </div>
+      <div class="main__guarantee-block">
+        <p class="p-first">Банковская гарантия</p>
+        <p>от <span>30</span> минут
+          до <span>250</span> млн ₽</p>
+        <img src="/assets/images/guaranteedude.webp" alt="">
+        <a href=""><p>Узнать подробнее
+          и заказать</p><img src="/assets/images/guaranteeline.svg" alt=""></a>
+      </div>
+      <div class="main__site-map">
+        <div class="site-map_top">
+          <p>Чем мы можем вам помочь</p>
+          <a href=""><input type="button" id="" value="Создать аккаунт"></a>
+        </div>
+        <div class="site-map_bottom">
+          <img src="/assets/images/map.webp" alt="">
+        </div>
+      </div>
+      <div class="main__advertising">
+        <p>Здесь может быть ваша реклама</p>
+      </div>
+      <div class="main__about-block">
+        <h1>О проекте</h1>
+        <p>Портал по тендерам, электронным аукционам и коммерческим закупкам MAGELAN – это профессиональные тендерные технологии, которые помогут представителям малого и среднего бизнеса оперативно решать свои потребности в поиске и контроле информации по всем видам госзакупкок а также электронным коммерческим торгам. На страницах портала представлена информация согласно 44 и 223 ФЗ, поэтому заявки делятся на открытые конкурсы, котировки цен, электронные аукционы, аукционы и предварительный отбор поставщиков. Также на портале пользователи смогут размещать свои заказы. Для еще большей скорости контроля тендеров разработана программа Скипер, которая отследит Ваш сегмент рынка в течении всего рабочего дня. MAGELAN.PRO – профессиональный подход в вопросе Вашего гарантированного участия в тендерах.</p>
+      </div>
+    </main>
+    <footer>
+        <div class="footer-section">
+          <a href=""><p>О проекте</p></a>
+          <a href="" class="a-mrg"><p>Услуги и тарифы</p></a>
+          <a href=""><p>Политика конфиденциальности</p></a>
+        </div>
+        <div class="footer-section">
+          <a href=""><p>Реклама на сайте</p></a>
+          <a href="" class="a-mrg"><p>Карта сайта</p></a>
+          <a href=""><p>Настройка рассылки</p></a>
+        </div>
+        <div class="footer-contacts">
+          <h1>8 495 648 6228</h1>
+          <p>Контакты</p>
+        </div>
+        <div class="footer-logocopy">
+          <img src="/assets/images/logo-footer.svg" alt="">
+          <p>© Magelan 2006-2023
+            версия 3.3.1</p>
+        </div>
+    </footer>
+  </body>
+  <script src="/assets/scripts/form.js"></script>
+  <script src="/assets/scripts/slider.js"></script>
+</html>
